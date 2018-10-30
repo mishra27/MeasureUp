@@ -25,4 +25,26 @@
         android:layout_height="fill_parent"
         android:layout_gravity="top"/>
 
+    <Button
+        android:id="@+id/fboRecord_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/surfaceview"
+        android:layout_alignTop="@+id/surfaceview"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="471dp"
+        android:onClick="clickToggleRecording"
+        android:text="@string/toggleRecordingOn"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/nowRecording_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fboRecord_button"
+        android:layout_alignBottom="@+id/fboRecord_button"
+        android:layout_toEndOf="@+id/fboRecord_button"
+        android:text="@string/toggleRecordingOff" />
+
+
 </RelativeLayout>
